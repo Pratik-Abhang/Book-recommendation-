@@ -9,4 +9,4 @@ book_name = pickle.load(open('Book_Recommender/book_name.pkl', 'rb'))
 final_rating = pickle.load(open('Book_Recommender/final_rating.pkl', 'rb'))
 book_pivot = pickle.load(open('Book_Recommender/book_pivot.pkl', 'rb')) 
 
-selected_books = st.selectbox("Type or Select a Book ", book_name
+selected_books = st.selectbox("Type or Select a Book ", book_name )
