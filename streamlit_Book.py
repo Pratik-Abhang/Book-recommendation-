@@ -7,7 +7,7 @@ import os
 st.header("Book Recommendation App")
 
 # Get the directory of the current script
-current_dir = os.path.dirname(os.path.abspath(__file__))
+current_dir = os.path.dirname(os.path.abspath(Book_Recommender))
 
 # Load the pickle files from the 'Book_Recommender' directory
 model = pickle.load(open(os.path.join(current_dir, 'Book_Recommender', 'model.pkl'), 'rb'))
