@@ -6,14 +6,12 @@ import os
 
 st.header("Book Recommendation App")
 
-# Get the directory of the current script
-current_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Load the pickle files from the 'Book_Recommender' directory
-model = pickle.load(open(os.path.join(current_dir, 'Book_Recommender', 'model.pkl'), 'rb'))
-book_name = pickle.load(open(os.path.join(current_dir, 'Book_Recommender', 'book_name.pkl'), 'rb'))
-final_rating = pickle.load(open(os.path.join(current_dir, 'Book_Recommender', 'final_rating.pkl'), 'rb'))
-book_pivot = pickle.load(open(os.path.join(current_dir, 'Book_Recommender', 'book_pivot.pkl'), 'rb'))
+model = pickle.load('Book_Recommender', 'model.pkl'), 'rb'))
+book_name = pickle.load('Book_Recommender', 'book_name.pkl'), 'rb'))
+final_rating = pickle.load('Book_Recommender', 'final_rating.pkl'), 'rb'))
+book_pivot = pickle.load('Book_Recommender', 'book_pivot.pkl'), 'rb'))
 
 def fetch_poster(suggestion):
     book_name = []
