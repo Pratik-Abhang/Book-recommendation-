@@ -8,10 +8,10 @@ st.header("Book Recommendation App")
 
 
 # Load the pickle files from the 'Book_Recommender' directory
-model = pickle.load(open('Book_Recommender', 'model.pkl'), 'rb')
-book_name = pickle.load(open('Book_Recommender', 'book_name.pkl'), 'rb')
-final_rating = pickle.load(open('Book_Recommender', 'final_rating.pkl'), 'rb')
-book_pivot = pickle.load(open('Book_Recommender', 'book_pivot.pkl'), 'rb')
+model = pickle.load(open('model.pkl', 'rb')
+book_name = pickle.load(open( 'book_name.pkl', 'rb')
+final_rating = pickle.load(open('final_rating.pkl', 'rb')
+book_pivot = pickle.load(open( 'book_pivot.pkl', 'rb')
 
 def fetch_poster(suggestion):
     book_name = []
